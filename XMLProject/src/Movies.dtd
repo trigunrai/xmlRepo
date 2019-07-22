@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!ELEMENT movies (movie+)>
-<!ELEMENT movies (code,title,release-date,theater-name+)>
+<!ELEMENT movies (code,title,release-date?,theater-name+,city*)>
 <!ELEMENT code (#PCDATA)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT release-date (day,month,year)>
@@ -8,3 +8,4 @@
 <!ELEMENT month (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
 <!ELEMENT theater-name (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
