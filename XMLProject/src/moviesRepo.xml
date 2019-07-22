@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE movies SYSTEM "movie.dtd" >
+<movies>
+<movie>
+  <code>101</code>
+  <title>Kabir Singh</title>
+  <release-date>
+ <day>26</day>
+ <month>4</month>
+ <year>2019</year>
+  </release-date>
+  <theater-name>Inox</theater-name>
+  <theater-name>CityPride</theater-name>
+  <city>Pune</city>
+  <city>Mumbai</city>
+  <city>Indore</city>
+  <city>Mhow</city>
+</movie>
+<movie>
+  <code>102</code>
+  <title>Article15</title>
+  <theater-name>PVR Cinemas</theater-name>
+  </movie>
+  </movies>
