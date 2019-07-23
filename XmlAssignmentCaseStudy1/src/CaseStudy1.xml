@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:OrderDetails xmlns:tns="http://www.example.org/CaseStudy1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/CaseStudy1 CaseStudy1.xsd ">
+  <tns:OI>OI-1234</tns:OI>
+  <tns:Customer>C-123456</tns:Customer>
+  <tns:customerName>Trigun Rai</tns:customerName>
+  <tns:PLAN PLAN="Regular"/>
+  <tns:service serv="Executive"/>
+  <tns:billingCycle>yearly</tns:billingCycle>
+  <tns:serviceAddress sa="203, Shahnai residency Mhow"/>
+</tns:OrderDetails>

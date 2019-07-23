@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/CaseStudy1" xmlns:tns="http://www.example.org/CaseStudy1" elementFormDefault="qualified">
+<element name="OrderDetails">
+	<complexType>
+		<sequence>
+		<element name="OI" maxOccurs="unbounded">
+		<simpleType>
+		<restriction base="string">
+			<pattern value="OI-[0-9]{4}"/>
+		</restriction>
+		</simpleType>
+</element>
+
+<element name="Customer" maxOccurs="unbounded">
+		<simpleType>
+		<restriction base="string">
+		<pattern value="C-[0-9]{6}"/>
+			
+		</restriction>
+		</simpleType>
+</element>
+
+<element name="customerName">
+<simpleType>
+		<restriction base="string">
+		<pattern value="[A-Z][a-z]+( [A-Z][a-z]+)*"/>
+		<minLength value="10"></minLength>
+		</restriction>
+		</simpleType>
+</element>
+
+<element name="PLAN" >
+<complexType >
+		<attribute name="PLAN" type="string" use="required"/>
+			
+		
+		</complexType>
+</element>
+
+<element name="service">
+<complexType>
+<attribute name="serv" type="string" use="required"/>
+</complexType>
+</element>
+
+
+<element name ="billingCycle">
+<simpleType>
+<restriction base="string">
+<enumeration value="monthly"></enumeration>
+<enumeration value="quarterly"></enumeration>
+<enumeration value="half-yearly"></enumeration>
+<enumeration value="yearly"></enumeration>
+</restriction>
+</simpleType>
+</element>
+
+<element name ="billingAddress" minOccurs="0" maxOccurs="1">
+<simpleType>
+<restriction base="string">
+</restriction>
+</simpleType>
+</element>
+
+
+<element name="serviceAddress">
+<complexType>
+<attribute name="sa" type="string" use="required"/>
+</complexType>
+</element>
+
+</sequence>
+</complexType>
+</element>
+</schema>
